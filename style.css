@@ -147,7 +147,7 @@ section:nth-child(3){
     color: #000;
 }
 #carrousel{
-    width: 400px;
+    width: 350px;
     overflow: hidden;
     position: relative;
 }
@@ -158,7 +158,7 @@ section:nth-child(3){
 }
 .card,
 .card img{
-    width: 190px;
+    width: 180px;
 }
 .cardContent{
     margin: 10px;
@@ -224,3 +224,123 @@ footer{
 footer p{
     margin: auto;
 }
+
+
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+  
+.show {
+    display: flex;
+}
+  
+.popupContent {
+    max-width: 600px;
+    max-height: 600px;
+    overflow: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+  
+.popupContent img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+  
+.popupContent h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+  
+.popupContent div {
+    font-size: 16px;
+}
+
+
+/********************mobile version */
+
+ @media screen and (max-width: 1024) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+      }
+    
+      nav li {
+        margin: 10px 0;
+      }
+    
+      .reservasion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .form input[type="text"],
+      .form select {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    
+      .form input[type="submit"] {
+        width: 100%;
+      }
+    }
+
+@media (max-width: 768px) {
+    #carrousel {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .card {
+      margin: 10px;
+      width: 600px;
+    }
+  
+    .card img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .card h2 {
+      font-size: 1.5rem;
+    }
+  
+    .cardContent p {
+      font-size: 1rem;
+    }
+  
+    .popupContent {
+      width: 20%;
+      max-height: 100%;
+    }
+}
+    
+ 
+  
+
+
+
